@@ -21,3 +21,50 @@ Morgen ga ik de test doen met Ihab en vragen stellen naar wat hij wil en wat zij
 - https://www.w3.org/WAI/fundamentals/accessibility-intro/#top 
 - https://dlo.mijnhva.nl/d2l/le/lessons/690182/units/2804014 
 
+## User test 1 met Ihab
+
+Vragen;
+- Zou je willen kiezen waar de focus begint?
+- Waar zou jij meestal willen starten?
+- Gebruik je nu al sneltoetsen? ja ik gebruik dit vaak om makkelijk te navigeren binnen een website.
+- Zou dit handig zijn voor jou?
+- ik heb twee opties voor shortcuts;
+
+1 Navigation menu (for exploring the site).
+2 Main content (recommended for reading)
+Is het duidelijk wat ‘skip to main content’ betekent?
+
+- ik wil shortcut knoppen implementeren, dus er zijn knoppen van 1 tm 4, waarbij elke knop je ergens anders laat navigeren.
+1 Skip to main concent
+2 skip to navigation
+3 skip to sidebar
+4 skip to footer
+
+is dit duidelijk, en zou dit je helpen?
+
+- wat is een ideale website voor jou qua toegangkelijk?
+
+**bevindingen;**
+
+- Mvda En Joel voor screen readers gebruiken.
+
+- altijd een stop knop zetten als een audio afspeelt ofzo 
+
+
+- telefoon spraak bericht en dicteren, maar dicteren gaat vaak lastig 
+- Website bekijken van hoe toegankelijk is het en hoe kan j t beter maken dus als je een website maakt en binnen die website wil navigeren 
+- Microsoft Frank is niet goed in klanken uitspreken dus ander persoon als vaste persoon zetten. Je kan ook ai gebruiken want die zijn meer menselijker. En pas op met de taal 
+- Screenreaders specifke sneltoetsen is verschillen. En er is verschil tussen Mac en Windows. 
+
+
+- Elke website heeft al zoiets al en website heeft al sneltoetsen om te navigeren binnen een websites 
+- Iets toevoegen eraan zou je ff kijken naar de functie binnen een wbsire 
+
+- elke website is anders 
+
+- Volgende links, volgende foto. De meeste dingen bestaan al 
+
+
+- handig om de extensie erin te doen en die gaat de website scannen en koppen zetten zodat de gebruiker makkelkkk summary kan krijgen en kan kieze wat te lezen 
+- handig om samenvatting te krijgen van spraak bericht
+
