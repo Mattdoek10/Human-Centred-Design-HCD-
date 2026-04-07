@@ -68,3 +68,30 @@ is dit duidelijk, en zou dit je helpen?
 - handig om de extensie erin te doen en die gaat de website scannen en koppen zetten zodat de gebruiker makkelkkk summary kan krijgen en kan kieze wat te lezen 
 - handig om samenvatting te krijgen van spraak bericht
 
+## User test 2 met Ihab
+
+**vragen;** 
+- het idee is dat dit een extntie moet faken. dit zijn de opties.
+
+- je kan met deze extentie sneltoesten vinden en ook de start positie van een website. Daarnaast kan je de startpositie zelf bepalen en die opslaan als een bookmaark, met het idee dat je die elke keer naar kan navigeren en als je op die pagina komt start je automatisch bij die tab index die je hebt ingesteld.
+
+- wat vind je van deze extentie ?
+- hoe zou ik deze extentie kunnen verbeteren?
+- Wat is wel goed hieraan?
+- vind je dit een goede manier om dingen op te slaan in de bookmarks? of zou je dit op een ander manier willen?
+
+- welke volgorde zou je deze opties willn?
+
+**bevindingen;**
+
+- de website is duidelijk hoe het werkt, misschien niet heel veel gebruiken maar bij sites als de bank zou hij het wel gebruiken.
+- Tab positie per website houden ipv 
+- En snel toesten bij elke website juist zetten. Vind je de opgeslagen bookmakers 
+
+- ik moet kijken welke sneltoetsen van het systeem komen niet in conflict met die van mij.
+
+- Bookmarks verwijder optie erbij zetten en een zoekfunctie erbij
+- Een knop met bookmarks en daarin meer info van alle websites met die functies, en een terug knop zetten.
+
+- huidige website sectie weghalen 
+- Daarnaast is het goed die volgorde.
