@@ -68,6 +68,13 @@ is dit duidelijk, en zou dit je helpen?
 - handig om de extensie erin te doen en die gaat de website scannen en koppen zetten zodat de gebruiker makkelkkk summary kan krijgen en kan kieze wat te lezen 
 - handig om samenvatting te krijgen van spraak bericht
 
+## Weekly checkout
+
+deze week heb ik de test gedaan op mijn eerste prototype, waaronder er verschillende bevindingen waren. Ik had niet perse veel, ik had alleen htmo en css en dit was makkelijk en snel te navigeren. Maar ik had de focus meer gezet om vragen te stellen zodat ik zijn behoeftes etc beter kan kennen en daarmee de website dan bouwen. Ik heb na de user test gekeken naar de bevindingen en ben toch aan de slag gegaan met de sneltoetsen, dus om een extentie te na boosten en die te maken zoals het echt zou werken op een website. Ik heb ervoor gekozen om 4 secties te zetten, deze zijn; huidige website, navigatie positie, sneltoetsen en bookmarks. 
+
+dit is hoe het er nu uit ziet;
+![alt text](/images/ss-tweedeversie.png)
+
 ## User test 2 met Ihab
 
 **vragen;** 
