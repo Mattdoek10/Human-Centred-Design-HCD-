@@ -102,3 +102,17 @@ dit is hoe het er nu uit ziet;
 
 - huidige website sectie weghalen 
 - Daarnaast is het goed die volgorde.
+
+## User test 3 met Ihab
+
+- Wanneer je Alt + S indrukt, is de alert-melding duidelijk en nuttig?
+- kan je makkelijk de terug positie vinden met de knop 'ga erheen'
+- vind je de knop verwijder daar goed staan?
+- Kna je makkelijk terug gaan naar de tab index die je had opgeslagen, zo nee, hoe zou ik het beter kunne maken voor jou?
+
+bevindigngen
+
+- je kan de emojis weglaten want het is een beetje verwarrend 
+- met screenreader testen want nu doet het niet goed.Het kan alleen tabben en de linkjes opslaan. niet de andere delen zoals een header gedeelte ofzo
+- Zoek functie erbij doen.
+- sorteer functie met nieuwese en oudste
