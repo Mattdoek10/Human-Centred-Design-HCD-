@@ -1,38 +1,4 @@
-// const textPopover = document.querySelector('.popover-grid');
-// const popoverActions = document.querySelector('.popover-actions');
-// const originalContent = textPopover.innerHTML, popoverOriginalActions = popoverActions.innerHTML;
 
-// function attachButtonListener() {
-//     const knopOpgeslagenWebsites = document.getElementById('knopOpgeslagenWebsites');
-//     if (knopOpgeslagenWebsites) {
-//         knopOpgeslagenWebsites.addEventListener('click', opgeslagenWebsites);
-//     }
-// }
-
-// function opgeslagenWebsites() {
-//     textPopover.innerHTML = "<section id=\"opgeslagenWebsites\"><h2>Opgeslagen Websites</h2><ul><li><a href=\"#\">https://example.com</a><button class=\"remove-button\">Verwijder</button></li><li><a href=\"#\">https://example2.com</a><button class=\"remove-button\">Verwijder</button></li></ul></section>";
-//     popoverActions.innerHTML = "<button id=\"backButton\">Terug</button>";
-//     const backButton = document.getElementById('backButton');
-    
-//     backButton.addEventListener('click', () => {
-//         textPopover.innerHTML = originalContent;
-//         popoverActions.innerHTML = popoverOriginalActions;
-//         attachButtonListener(); 
-//     });
-// }
-
-// const removeButtons = document.querySelectorAll('.remove-button');
-
-// removeButtons.addEventListener('click', () => {
-// removeButtons.remove();
-
-// });
-
-// attachButtonListener();
-
-// ============================================
-// STAP 1: Bewaar de originele HTML
-// ============================================
 
 const popoverGrid = document.querySelector('.popover-grid');
 const popoverActions = document.querySelector('.popover-actions');
@@ -40,67 +6,107 @@ const popoverActions = document.querySelector('.popover-actions');
 const origineleInhoud = popoverGrid.innerHTML;
 const origineleActies = popoverActions.innerHTML;
 
+function maakHeadingFocusbaar() {
+    document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(heading) {
+        if (!heading.hasAttribute('tabindex')) {
+            heading.setAttribute('tabindex', '0');
+        }
+    });
+}
+// copilot: hoe zorg ik dat alle headings focusbaar zijn, zodat gebruikers er makkelijk naartoe kunnen tabben of er met sneltoetsen naartoe kunnen springen?
+function maakElementFocusbaar(element) {
+    if (element instanceof HTMLElement && !element.hasAttribute('tabindex')) {
+        element.setAttribute('tabindex', '-1');
+    }
+}
 
-// ============================================
-// STAP 2: Bijhouden waar de gebruiker is
-// ============================================
+maakHeadingFocusbaar();
 
-// Dit is de "geheugen" variabele — hier slaan we het element in op
+
 let huidigFocusElement = null;
-
-// Elke keer dat iemand ergens op klikt of naartoe tabt...
 document.addEventListener('focusin', function(event) {
 
-    // ...kijken we of het BUITEN de popover is
     if (!event.target.closest('.popover')) {
-
-        // Zo ja: onthoud dat element
         huidigFocusElement = event.target;
     }
 });
 
+// positie opslaan
 
-// ============================================
-// STAP 3: Positie opslaan met Alt + S
-// ============================================
-
-// Lijst van opgeslagen posities
 let opgeslagenPosities = [];
 
-document.addEventListener('keydown', function(event) {
+function gaNaarSectie(id) {
+    let doel = document.getElementById(id);
+    if (!doel) {
+        return;
+    }
+    doel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Controleer of Alt + S is ingedrukt
+    // copilot: hoe zorg ik dat het doel element focusbaar is, en dat de focus er ook echt op komt te staan?
+    if (doel instanceof HTMLElement) {
+        maakElementFocusbaar(doel);
+        doel.focus();
+    }
+}
+
+// bron; https://www.w3schools.com/js//js_switch.asp
+
+document.addEventListener('keydown', function(event) {
+    if (event.altKey) {
+        switch (event.key) {
+            case '1':
+                event.preventDefault(); //voorkomt dat de browser zijn eigen standaardreactie op die toets uitvoert.
+                gaNaarSectie('hoofdinhoud');
+                return;
+            case '2':
+                event.preventDefault();
+                gaNaarSectie('navigatie-menu');
+                return;
+            case '3':
+                event.preventDefault();
+                gaNaarSectie('zijbalk');
+                return;
+            case '4':
+                event.preventDefault();
+                gaNaarSectie('voetnoot');
+                return;
+        }
+    }
+
     if (event.altKey && event.key === 's') {
 
-        // Is er wel een element gefocust?
-        if (huidigFocusElement === null) {
-            alert('Eerst ergens op klikken of naartoe tabben!');
+        let elementOmOpTeSlaan = huidigFocusElement || document.activeElement;
+
+        if (!elementOmOpTeSlaan || elementOmOpTeSlaan === document.body || elementOmOpTeSlaan === document.documentElement) {
+            alert('Eerst ergens op klikken, naartoe tabben of een heading focusen!');
             return;
         }
 
+        // met ai prompt; hoe geef ik een element een unieke id als dat nog niet heeft, zodat ik er later makkelijk naar te rugkeren?
+        // Zorg dat het element focusbaar is als dat nog niet zo is
+        maakElementFocusbaar(elementOmOpTeSlaan);
+
         // Maak een omschrijving van het element
-        // Bijvoorbeeld: "BUTTON: Lees meer" of "A: Home"
-        let omschrijving = huidigFocusElement.tagName + ': ' + huidigFocusElement.innerText.trim();
+        // Bijvoorbeeld: "BUTTON: Lees meer" of "H2: Accessibility in Context"
+        let omschrijving = elementOmOpTeSlaan.tagName + ': ' + elementOmOpTeSlaan.innerText.trim();
+
+        // Als het element geen id heeft, geef het een uniek id
+        if (!elementOmOpTeSlaan.id) {
+            elementOmOpTeSlaan.id = 'saved-position-' + Date.now();
+        }
 
         // Voeg toe aan de lijst
         opgeslagenPosities.push({
             omschrijving: omschrijving,
-            element: huidigFocusElement   // bewaar het echte element
+            element: elementOmOpTeSlaan   // bewaar het echte element
         });
 
         alert('Opgeslagen: ' + omschrijving);
     }
 });
 
-
-// ============================================
-// STAP 4: Toon de opgeslagen posities
-// ============================================
-
 function toonOpgeslagenWebsites() {
 
-    // Bouw de lijst op als HTML
-    // Als er niets is opgeslagen, toon een melding
     let lijstHTML = '';
 
     if (opgeslagenPosities.length === 0) {
@@ -132,7 +138,7 @@ function toonOpgeslagenWebsites() {
 
     popoverActions.innerHTML = `<button id="backButton">Terug</button>`;
 
-    // Koppel de "Ga erheen" knoppen
+    // met copilot prompt; hoe koppel ik de "Ga erheen", en "verwijder" knoppen.
     document.querySelectorAll('.herstel-knop').forEach(function(knop) {
         knop.addEventListener('click', function() {
 
@@ -167,11 +173,6 @@ function toonOpgeslagenWebsites() {
         koppelKnoppen();
     });
 }
-
-
-// ============================================
-// STAP 5: Koppel de beginknop
-// ============================================
 
 function koppelKnoppen() {
     let knop = document.getElementById('knopOpgeslagenWebsites');
