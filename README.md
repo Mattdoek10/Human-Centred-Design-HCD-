@@ -103,6 +103,10 @@ dit is hoe het er nu uit ziet;
 - huidige website sectie weghalen 
 - Daarnaast is het goed die volgorde.
 
+## Weekly checkout 17 april 2026
+
+deze week heb ik me meer gefocust op de bookmarks. Dus ik heb de de javascript aangemaakt zodat ihab die kon testen. Binnen me code kon je tabben en op linkjes etc kan je dan ctr s klikken, en zou dat word opgelsagen in de sectie van 'opgeslagen posities'. Maar helaas werkte dat niet zo goed want ik heb dat niet getest met screen reader, dus me tab index ging niet op de headers etc, dus alleen links. Hierdoor kon ik mijn prototype niet goed testen. het werkte dus wel maar niet op alles. 
+
 ## User test 3 met Ihab
 
 - Wanneer je Alt + S indrukt, is de alert-melding duidelijk en nuttig?
@@ -116,3 +120,7 @@ bevindigngen
 - met screenreader testen want nu doet het niet goed.Het kan alleen tabben en de linkjes opslaan. niet de andere delen zoals een header gedeelte ofzo
 - Zoek functie erbij doen.
 - sorteer functie met nieuwese en oudste
+
+## weekly checkout 24 april 2026
+
+ik heb vandaag gewerkt aan debookmark/opgeslagen positie met de screen reader. Ik heb de NVDA screenreader gedownload en die getest en uit gezocht hoe het werkt. Dit kosste me ongeveer 2 uren want de sneltoetsen werkte niet, blijkt dat ik me laptop moest herstarten. Hierna ben ik aan de slag gegaan. Ik heb de javasxcdipt code laten werken, ik heb daarnaast ook de sneltoetsen laten werken en gekeken als het niet overeen komt met de sneltoetsen die er nu in het algemeen al bestaan. Dus nu kan je in me website met de extentie soort navigeren in verschillende plekken in de website, en je kan verschillende delen van de website opslaan en dan naartoe navigeren voor latere gebruik.
