@@ -138,3 +138,10 @@ zijn hobbies;
 - sport 
 - anime 
 - lezen
+
+- website werkt goed en hij kan naivigeren binnen de website
+- de alt 3 en 4 werken niet helemaal goed, 3 werkt niet omdat er geen zijbalk is maar de ander brengt je naar de home gedeelte
+- geluid kan zachter bij animatie sound wanneer er geklikt word op 'verwijder'
+- geluidje krijgen nadat er geklikt word op Alt + S is beter dan popup krijgen, zodat hij niet hoef te klikken op die 'ok' knop.
+- De animatie sound vind hij een goede toevoeging en grappig.
+- De zoekbalk erbij zetten voor als veel dingen zijn opgeslagen.
