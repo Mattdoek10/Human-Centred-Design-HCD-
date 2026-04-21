@@ -109,7 +109,6 @@ deze week heb ik me meer gefocust op de bookmarks. Dus ik heb de de javascript a
 
 ## User test 3 met Ihab
 
-- Wanneer je Alt + S indrukt, is de alert-melding duidelijk en nuttig?
 - kan je makkelijk de terug positie vinden met de knop 'ga erheen'
 - vind je de knop verwijder daar goed staan?
 - Kna je makkelijk terug gaan naar de tab index die je had opgeslagen, zo nee, hoe zou ik het beter kunne maken voor jou?
@@ -124,3 +123,18 @@ bevindigngen
 ## weekly checkout 24 april 2026
 
 ik heb vandaag gewerkt aan debookmark/opgeslagen positie met de screen reader. Ik heb de NVDA screenreader gedownload en die getest en uit gezocht hoe het werkt. Dit kosste me ongeveer 2 uren want de sneltoetsen werkte niet, blijkt dat ik me laptop moest herstarten. Hierna ben ik aan de slag gegaan. Ik heb de javasxcdipt code laten werken, ik heb daarnaast ook de sneltoetsen laten werken en gekeken als het niet overeen komt met de sneltoetsen die er nu in het algemeen al bestaan. Dus nu kan je in me website met de extentie soort navigeren in verschillende plekken in de website, en je kan verschillende delen van de website opslaan en dan naartoe navigeren voor latere gebruik.
+
+## User test 4 met Ihab
+
+
+- Wanneer je Alt + S indrukt, is de alert-melding duidelijk en nuttig? of zou je alleen een geluid willen als een piep of een grappig geluid ?
+- wat voor random ding die bij je persoonlijkheid past wil je hier terug zien? denk aan een funny sound als je bijvoorbeeld verwijder klikt. Of juist eentje wanneer je iets opslaat als begin positie?
+- 
+
+bevindingen 
+
+zijn hobbies;
+- muziek 
+- sport 
+- anime 
+- lezen

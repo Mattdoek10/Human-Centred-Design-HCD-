@@ -6,6 +6,9 @@ const popoverActions = document.querySelector('.popover-actions');
 const origineleInhoud = popoverGrid.innerHTML;
 const origineleActies = popoverActions.innerHTML;
 
+// bron sound useEffect; https://www.myinstants.com/en/instant/anime-punch/
+const verwijderGeluid = new Audio('sound/strongpunch.mp3');
+
 function maakHeadingFocusbaar() {
     document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(heading) {
         if (!heading.hasAttribute('tabindex')) {
@@ -155,6 +158,10 @@ function toonOpgeslagenWebsites() {
     // Koppel de "Verwijder" knoppen
     document.querySelectorAll('.verwijder-knop').forEach(function(knop) {
         knop.addEventListener('click', function() {
+
+            verwijderGeluid.currentTime = 0;
+            verwijderGeluid.play();
+
 
             let index = knop.dataset.index;
 
