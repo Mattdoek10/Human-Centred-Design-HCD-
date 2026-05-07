@@ -145,3 +145,30 @@ zijn hobbies;
 - geluidje krijgen nadat er geklikt word op Alt + S is beter dan popup krijgen, zodat hij niet hoef te klikken op die 'ok' knop.
 - De animatie sound vind hij een goede toevoeging en grappig.
 - De zoekbalk erbij zetten voor als veel dingen zijn opgeslagen.
+
+## Wat ik zou aanpassen als ik meer tijd had
+Als ik meer tijd had zou ik dit nog verbeteren:
+
+- De sneltoetsen Alt + 3 en Alt + 4 werken niet helemaal goed, dus die zou ik fixen zodat ze overal correct navigeren.
+
+- Het geluid bij het verwijderen van een item zou ik zachter zetten, zodat het minder hard binnenkomt.
+
+- Bij Alt + S zou ik liever een geluidje gebruiken in plaats van een popup, zodat de gebruiker niet steeds op een “OK” knop hoeft te klikken.
+
+- Een zoekbalk toevoegen voor wanneer er veel opgeslagen items zijn, zodat je sneller iets kan terugvinden.
+
+- Een filterfunctie toevoegen zodat je kan sorteren op bijvoorbeeld nieuwste of oudste opgeslagen posities.
+
+## Reflectie Exclusive Design Principles
+
+Tijdens dit project heb ik gewerkt met de Exclusive Design principles; study situation, ignore conventions, prioritise identity en add nonsense. Deze principles kwamen terug tijdens het onderzoeken, testen, itereren en bouwen van me accessibility extentie voor iemand die blind is, in dit geval Ihab.
+
+Bij study situation heb ik gekeken naar de situatie van Ihab en hoe hij websites gebruikt met een screenreader en toetsenbord. Tijdens de user tests kwam ik erachter dat veel websites lastig zijn zonder muis en dat elke website anders werkt qua navigatie en sneltoetsen. Hierdoor ben ik functies gaan maken zoals sneltoetsen om snel naar delen van de website te gaan, focus management en opgeslagen posities zodat hij makkelijk terug kan navigeren naar een plek op de website. Ook heb ik zelf NVDA getest zodat ik beter kon begrijpen hoe een screenreader werkt en hoe de gebruiker de website ervaart.
+
+Het principe ignore conventions zie je terug in de keuzes die ik heb gemaakt binnen de extentie. Veel websites gebruiken standaard navigatie en headings zijn normaal bijvoorbeeld niet focusbaar. Meestal start de tab index links boven van de website. Ik heb ervoor gekozen om headings focusbaar te maken zodat gebruikers makkelijker ergens naartoe kunnen navigeren. Ook heb ik sneltoetsen toegevoegd met Alt + 1 t/m 4 om snel naar bepaalde onderdelen van de website te springen. Daarnaast heb ik Alt + S toegevoegd zodat je een positie kan opslaan. Dit zijn geen standaard interacties op websites maar voor deze gebruiker werkte dit juist beter.
+
+Prioritise identity was belangrijk tijdens het hele project omdat ik niet ontwierp voor een standaard gebruiker maar specifiek voor iemand die blind is. Hierdoor lag de focus meer op toegankelijkheid en gebruiksgemak dan op alleen een mooie website maken. Tijdens de user tests luisterde ik veel naar de feedback en wensen van Ihab. Bijvoorbeeld dat hij liever audio feedback wilde in plaats van popup meldingen en dat sommige sneltoetsen niet handig waren omdat screenreaders al eigen shortcuts gebruiken. Zijn feedback heeft veel invloed gehad op hoe het eindproduct eruit ziet.
+
+Het principe add nonsense zie je terug in kleine grappige toevoegingen binnen de extentie. Bijvoorbeeld het anime punch geluid wanneer je een opgeslagen positie verwijderd. Dit geluid heeft niet echt een functie voor de normale gebruiker maar maakt de extentie wat persoonlijker en minder saai voor Ihab. Tijdens de user test gaf Ihab aan dat hij dit grappig vond en dat zulke kleine toevoegingen de experience leuker maken.
+
+Door deze principles toe te passen ben ik anders gaan kijken naar design. Ik heb geleerd dat je niet altijd standaard regels hoeft te volgen maar juist moet kijken naar de gebruiker en zijn situatie. Ook heb ik geleerd hoe belangrijk testen en itereren is binnen Human Centred Design, en over het algemeen.

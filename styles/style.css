@@ -202,6 +202,36 @@ main {
         font-size: 0.95rem;
     }
 
+main > span {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    color: #64748b;
+    font-size: 0.95rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#navigatie-menu {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 3rem 0;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 900px) {
     main {
 
